@@ -1,0 +1,298 @@
+/*abaixo e os comandos para implementacao da fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+html{ font-family: 'Chakra Petch', sans-serif;}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;}
+
+/*configuracoes de backgroud da pagina toda*/
+.register{
+    background-image: url(/Ghost_mensseger/util/supernova.png);
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+/*d_cab sao as configuracoes do cabecalho invisivel*/
+.d_cab_reg{
+    height: 80px;
+    position: absolute;
+    top: 1px;
+}
+
+/*d_central e a div invisivel do meio*/
+#d_central_reg{
+    width: 39%;
+    margin-left: 18%;
+}
+
+/*h1_cab e o titulo "ghost_messages"*/
+#h1_cab_reg{
+    color: #c70365;
+    margin-left: 300px;
+    margin-top: 15px;
+    text-shadow: 0 0 25px goldenrod;
+    animation-name: anim_cab;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/*Essa e a animacao do "ghost messages"*/
+@keyframes anim_cab{
+
+    0% { text-shadow: 0 0 25px #ff007f;}
+    50% {text-shadow: 0 0 25px goldenrod;}
+    100% {text-shadow: 0 0 25px #ff007f;}}
+
+/*#cab e o nome da div do cabecalho*/
+#cab_reg{
+    border-radius: 10px;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    text-align: center;
+    top: -2px;
+}
+
+/*d_esquerda e a div invisivel do cabecalho, a div que possui o botao "voltar"*/
+#d_esquerda_reg{
+    float: left;
+    border-bottom: 0px;
+    border-right: 2px;
+    width: 30%;
+}
+
+/*Botao voltar*/
+#voltar_reg{
+    width: 80px;
+    height: 35px;
+    border: solid 2px #ff007f;
+    background: transparent;
+    transition: all 0.2s ease-in-out;
+    animation: anim_form;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    font-size: 18px;
+    user-select: none;
+    cursor: pointer;
+    margin-left: -280px;
+    margin-top: 15px;
+}
+
+/*animacao da borda se arredondar no botao "voltar"*/
+#voltar_reg:hover{border-radius: 15px;}
+
+/*letras do botao voltar*/
+#p_voltar_reg{margin-top: 3px;}
+
+/*classe que da cor estatica das letras do "voltar"*/
+.link-as-#voltar_reg{color: #ff007f;}
+
+/*classe que faz a mudanca de cor nas letras do "voltar" quando o mouse passa por cima*/
+.link-as-#voltar_reg:hover {color: #ff007f;}
+
+/*div direita do cabecalho, a mais inutil*/
+#d_direita_reg{
+    float: right;
+    margin-left: 70%;
+    width: 30%; 
+}
+
+/*caixa do formulario*/
+#form_reg{
+    border: solid 2px #ff007f;
+    width: 500px;
+    box-sizing: border-box;
+    height: 550px;
+    margin-left: 400px;
+    text-align: center;
+    background-color: transparent;
+    box-shadow: 0 0 15px #ff007f, inset 0 0 15px #ff007f;
+    text-shadow: 0 0 25px #ff007f;
+    animation-name: anim_form;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    margin-left: 480px;
+    margin-top: -55px;
+}
+
+/*Cor das letras gmail e senha*/
+input, select, textarea{
+    color: #ff007f;
+    font-weight: 500;
+}
+
+/*cor das letras dentro dos imput*/
+textarea:focus, input:focus {
+    color: #ff007f;
+    font-weight: 500;
+}
+
+/*Animacao da borda da caixa do formulario*/
+@keyframes anim_form{
+    0% {    box-shadow: 0 0 15px goldenrod, inset 0 0 15px #ff007f;
+        text-shadow: 0 0 25px #ff007f;
+    }
+    50% {    box-shadow: 0 0 15px #ff007f, inset 0 0 15px goldenrod;
+        text-shadow: 0 0 25px goldenrod;
+    }
+    100% {    box-shadow: 0 0 15px goldenrod, inset 0 0 15px #ff007f;
+        text-shadow: 0 0 25px #ff007f;
+    }}
+
+/*div que posiciona os dados do formulario, "dentro_form_log = dentro do formulario registrar"*/
+#dentro_form_reg{margin-top: -50px;}
+
+ /*Classe que edita os label, a escrita encima dos imput*/ 
+.label_reg{
+    font-size: 28px;
+    color: #ff007f;
+    background: transparent;
+}
+
+/*Edita a parte do imput, aonde se escreve os dados*/
+.dados_reg{
+    width: 300px;
+    height: 30px;
+    background: rgb(54, 11, 62);
+    border: solid 2px #ff007f;
+    text-align: center center;
+}
+
+/*Botao enviar*/
+#enviar_reg{
+    color: #ff007f;
+    width: 100px;
+    height: 45px;
+    border: solid 2px #ff007f;
+    background: transparent;
+    transition: all 0.2s ease-in-out;
+    animation: anim_form;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    font-size: 28px;
+    user-select: none;
+    cursor: pointer;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+/*animacao das bordas do botao enviar*/
+#enviar_reg:hover{
+    box-shadow: 0 0 20px #ff007f, inset 0 0 20px #ff007f;
+    text-shadow: 0 0 20px #ff007f;
+    border-radius: 15px;
+}
+
+/*cor dos nossos nomes*/
+.link-as-#enviar_reg{color: #ff007f;}
+
+/*confing do paragrafo do enviar*/
+.p_botao_reg{
+    font-size: 28px;
+    user-select: none;
+    cursor: pointer;
+    margin-top: 0.1px;
+}
+
+/*div invisivel do instagram*/
+#insta_reg{
+    height: 50px;
+    width: 250px;
+    margin-left: 82%;
+    user-select: none;
+    cursor: pointer;
+    margin-top: 450px;
+    font-size: 18px;
+}
+
+/*parte do nosso nome */
+#p_guille_reg{color: #ff007f;}
+#p_rick_reg{color: #ff007f;}
+
+/*animacao dos links do insta*/
+.p_instagram_reg{
+    animation-name: insta_anim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes insta_anim{
+    0% {   text-shadow: 0 0 5px #ff007f;}
+    50% {  text-shadow: 0 0 5px black;}
+    100% { text-shadow: 0 0 5px #ff007f;}}
+
+/*animacao do mouse encima das letras*/
+.link-as-button_reg:hover {color: goldenrod;}
+
+
+#Areatexto {
+    background: rgb(54, 11, 62);
+    border: solid 2px #ff007f;
+    text-align: center center;
+  }
+#form_messages {
+  border: solid 2px #ff007f;
+  width: 500px;
+  box-sizing: border-box;
+  height: 320px;
+  margin-left: 400px;
+  text-align: center;
+  background-color: transparent;
+  box-shadow: 0 0 15px #ff007f, inset 0 0 15px #ff007f;
+  text-shadow: 0 0 25px #ff007f;
+  animation-name: anim_form;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  margin-left: 480px;
+  margin-top: 50px;
+}
+
+
+#divMsgErro{
+    width: 142px;
+    font-size: 22px;
+    color: cyan;
+    margin-left: 10px;
+    }
+    
+    #pMsgErro {
+        animation: funcional;
+        animation-duration: 3s;
+    animation-iteration-count: infinite;
+    }
+     
+    @keyframes funcional{
+        0% {   
+        text-shadow: 0 0 40px cyan;
+        }
+    
+        50% {    
+            text-shadow: 0 0 0px rgb(0, 255, 0);
+        }
+        100% {   
+            text-shadow: 0 0 40px cyan;
+        }
+    }
+    
+    @keyframes error{
+        0% {   
+        text-shadow: 0 0 100px rgb(244, 0, 0);
+        }
+    
+        50% {    
+            text-shadow: 0 0 0px rgb(255, 0, 0);
+        }
+        100% {   
+            text-shadow: 0 0 100px rgb(255, 0, 0);
+    
+        }
+    }
+
+    #editar_mes {
+    
+    }

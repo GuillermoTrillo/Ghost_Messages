@@ -1,0 +1,267 @@
+/*abaixo e os comandos para implementacao da fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+html{font-family: 'Chakra Petch', sans-serif;}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;}
+
+/*configuracoes de backgroud da pagina toda*/
+.login{
+    background-image: url(/Ghost_mensseger/util/floresta.png);
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+/*d_cab sao as configuracoes do cabecalho invisivel*/
+.d_cab_log{
+    height: 80px;
+    position: absolute;
+    top: 1px;  
+}
+
+/*d_central e a div invisivel do meio*/
+#d_central_log{
+    width: 39%;
+    margin-left: 18%;
+}
+
+/*h1_cab e o titulo "ghost_messages"*/
+#h1_cab_log{
+
+    color: #00ff80;
+    margin-left: 300px;
+    margin-top: 15px;
+    animation-name: anim_cab;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+/*Essa e a animacao do "ghost messages"*/
+@keyframes anim_cab{
+
+    0% {text-shadow: 0 0 35px #4bd2ff;}
+    50% {text-shadow: 0 0 35px #00ff40;}
+    100% {text-shadow: 0 0 35px #4bd2ff;}}
+
+/*#cab e o nome da div do cabecalho*/
+#cab_log{
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    top: -2px;
+
+}
+
+/*d_esquerda e a div invisivel do cabecalho, a div que possui o botao "voltar"*/
+#d_esquerda_log{
+    float: left;
+    border-bottom: 0px;
+    border-right: 2px;
+    width: 30%;
+}
+
+/*Botao voltar*/
+#voltar_log{
+    color: #ff007f;
+    width: 80px;
+    height: 35px;
+    border: solid 2px #ff007f;
+    background: transparent;
+    transition: all 0.2s ease-in-out;
+    animation: anim_form;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    font-size: 18px;
+    user-select: none;
+    cursor: pointer;
+    margin-left: -280px;
+    margin-top: 15px;
+}
+/*animacao da borda se arredondar no botao "voltar"*/
+#voltar_log:hover{border-radius: 15px;}
+
+/*classe que da cor estatica das letras do "voltar"*/
+.link-as-button_log{color: #ff007f;}
+
+/*classe que faz a mudanca de cor nas letras do "voltar" quando o mouse passa por cima*/
+.link-as-button_log:hover {color: #4bd2ff;}
+
+/*div direita do cabecalho, a mais inutil*/
+#d_direita_log{
+    float: right;
+    margin-left: 70%;
+    width: 30%;
+    
+}
+
+/*caixa do formulario*/
+#form_log{
+    border: solid 2px #ff007f;
+    width: 500px;
+    box-sizing: border-box;
+    height: 400px;
+    margin-left: 400px;
+    text-align: center;
+    background-color: transparent;
+    animation-name: anim_form;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    margin-left: 480px;
+    margin-top: 20px;
+}
+
+/*Cor das letras gmail e senha*/
+input, select, textarea{
+    color: rgb(255, 255, 255);
+    font-weight: 500px;
+}
+
+/*cor das letras dentro dos imput*/
+textarea:focus, input:focus {
+    color: rgb(255, 255, 255);
+    font-weight: 500px;
+}
+
+/*Animacao da borda da caixa do formulario*/
+@keyframes anim_form{
+    0% {    box-shadow: 0 0 35px rgb(153, 0, 255), inset 0 0 35px #00ff88;
+        text-shadow: 0 0 25px #00ff88;
+    }
+    50% {    box-shadow: 0 0 35px #00ff88, inset 0 0 35px rgb(153, 0, 255);
+        text-shadow: 0 0 25px rgb(153, 0, 255);
+    }
+    100% {    box-shadow: 0 0 35px rgb(153, 0, 255), inset 0 0 35px #00ff88;
+        text-shadow: 0 0 25px #00ff88;
+    }
+}
+
+/*div que posiciona os dados do formulario, "dentro_form_log = dentro do formulario login"*/
+#dentro_form_log{ margin-top: -35px;}
+
+/*Classe que edita os label, a escrita encima dos imput*/
+.label_log{
+    font-size: 28px;
+    color: #00ff88;
+    background: transparent;
+}
+
+/*Edita a parte do imput, aonde se escreve os dados*/
+.dados_log{
+    width: 300px;
+    height: 30px;
+    background-color: #001f18 ;
+    border: solid 2px #8800ff;
+    text-align: center center;
+}
+
+/*Botao enviar*/
+#enviar_log{
+    color: #f5f5f5;
+    width: 100px;
+    height: 40px;
+    border: solid 2px #ff007f;
+    background: transparent;
+    transition: all 0.2s ease-in-out;
+    animation: anim_form;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    font-size: 28px;
+    user-select: none;
+    cursor: pointer;
+    font-family: 'Chakra Petch', sans-serif;
+    margin-top: 50px;
+}
+#divMsgErro{
+width: 142px;
+font-size: 22px;
+color: cyan;
+margin-left: 10px;
+}
+
+#pMsgErro {
+    animation: funcional;
+    animation-duration: 3s;
+animation-iteration-count: infinite;
+}
+ 
+@keyframes funcional{
+    0% {   
+    text-shadow: 0 0 40px cyan;
+    }
+
+    50% {    
+        text-shadow: 0 0 0px rgb(0, 255, 0);
+    }
+    100% {   
+        text-shadow: 0 0 40px cyan;
+    }
+}
+
+@keyframes error{
+    0% {   
+    text-shadow: 0 0 100px rgb(244, 0, 0);
+    }
+
+    50% {    
+        text-shadow: 0 0 0px rgb(255, 0, 0);
+    }
+    100% {   
+        text-shadow: 0 0 100px rgb(255, 0, 0);
+
+    }
+}
+
+
+
+/*animacao das bordas do botao enviar*/
+#enviar_log:hover{
+    border-radius: 15px;
+}
+
+/*animacao que faz as letras do voltar ficarem em ciano quando se passa o mouse por cima*/
+.link-as-button_log:hover {
+    color: cyan;
+}
+
+/*div invisivel do instagram*/
+#insta_log{
+    height: 50px;
+    width: 250px;
+    margin-left: 82%;
+    user-select: none;
+    cursor: pointer;
+    margin-top: 450px;
+    font-size: 18px;
+;
+
+}
+
+/*parte do nosso nome */
+#p_guille_log{ color: #ff007f; }
+#p_rick_log{ color: #ff007f; }
+
+/*animacao dos links do insta*/
+.p_instagram_log{
+    animation-name: insta_anim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  
+}
+@keyframes insta_anim{
+
+    0%   { text-shadow: 0 0 10px black;}
+    50%  { text-shadow: 0 0 10px #ff46ce;}
+    100% { text-shadow: 0 0 10px black;}
+}
+
+/*animacao do mouse encima das letras*/
+.link-as-button:hover { color: cyan; }
+

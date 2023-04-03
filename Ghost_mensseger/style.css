@@ -1,0 +1,301 @@
+/*abaixo e os comandos para implementacao da fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+html{font-family: 'Chakra Petch', sans-serif;}
+
+/*configuracoes de backgroud da pagina toda*/
+.index{
+    background-image: url(/Ghost_mensseger/util/mulher.jpg);
+    background-position: center center;
+    margin-top: 3px;
+    background-size: cover;
+}
+
+/*d_cab sao as configuracoes do cabecalho invisivel*/
+.d_cab{
+    height: 80px;
+    position: absolute;
+    top: 1px;
+    text-align: center center;
+}
+
+/*d_central e a div invisivel do meio*/
+#d_central{
+    width: 39%;
+    margin-left: 18%;
+}
+
+/*#cab e o nome da div do cabecalho*/
+#cab{
+    border-radius: 10px;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    text-align: center;
+    top: -2px;
+}
+
+/*h1_cab e o titulo "ghost_messages"*/
+#h1_cab{
+
+    color: #469bd2;
+    text-align: right;
+    margin-top: 12px;
+    text-shadow: 0 0 30px #00ffee;
+    animation-name: h1_cab_anim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/*Essa e a animacao do "ghost messages"*/
+@keyframes h1_cab_anim{
+    0%   { text-shadow: 0 0 25px #00ffee;}
+    50%  { text-shadow: 0 0 25px #469bd2;}
+    100% { text-shadow: 0 0 25px #00ffee;}
+}
+
+/*d_esquerda e a div invisivel do cabecalho, a div que possui o botao "voltar"*/
+#d_esquerda{
+    float: left;
+    border-bottom: 0px;
+    border-right: 2px;
+    width: 30%;
+}
+
+/*div direita do cabecalho, a mais inutil*/
+#d_direita{
+    float: right;
+    margin-left: 70%;
+    width: 30%;
+}
+
+#conta {
+    color: rgb(0, 255, 191);
+}
+/*edita os botoes*/
+.botoes{
+    font-family: 'Chakra Petch', sans-serif;
+    width: 80px;
+    height: 42px;
+    border: solid 2px #469bd2;
+    top: 22px;
+    position: absolute;
+    background-color: black;
+    transition: all 0.2s ease-in-out;
+}
+/*edita as letras dentro do botao*/
+.p_botao{
+    font-size: 15px;
+    user-select: none;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+/*faz o efeito das bordas nos botoes quando passado o mouse por cima*/
+button:hover{
+    box-shadow: 0 0 20px #469bd2, inset 0 0 20px #00ffee;
+    text-shadow: 0 0 20px #469bd2;
+    border-radius: 15px;
+}
+
+/*tira a linha de baixo da escrita do botao*/
+.link-as-button{text-decoration: #469bd2;}
+
+/*muda a cor do texto do botao quando o mouse passa por cima*/
+.link-as-button:hover {color: #00ffee;}
+
+
+/*esses dois id a seguir foram feitos para alinhar os botoes*/
+#login{ 
+    margin-left: 20%;
+    text-align: center;
+}
+#Reg{margin-left: -5%;}
+
+/*div do meio*/
+#meio{
+    width: 100%;
+    height: 560px;
+    text-align: center;
+}
+
+/*caixa de texto da explicacao*/
+.explic{
+    border: solid 2px #469bd2;
+    margin-top: -40px;
+    width: 700px;
+    box-sizing: border-box;
+    height: 460px;
+    margin-left: 400px;
+    text-align: center;
+    background-color: transparent;
+    box-shadow: 0 0 15px #276791, inset 0 0 15px #00ffee;
+    text-shadow: 0 0 25px #469bd2;
+    animation-name: explic_anim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+/*animacao da explicacao*/
+@keyframes explic_anim{
+
+0% {    box-shadow: 0 0 15px #153e59, inset 0 0 15px #00ffee;
+    text-shadow: 0 0 25px #00ffee;
+}
+50% {    box-shadow: 0 0 15px #00ffee, inset 0 0 15px #276791;
+    text-shadow: 0 0 25px #469bd2;
+}
+100% {    box-shadow: 0 0 15px #153e59, inset 0 0 15px #00ffee;
+    text-shadow: 0 0 25px #00ffee;
+}}
+
+/*letras da explicacao*/
+#p_explic{
+    margin-top: 15px;
+    font-size: 30px;
+    -webkit-text-stroke-width: 1.1px; /* largura da borda */
+    font-size: 40px;
+    color: #469bd2;
+    -webkit-text-stroke-color: black;/* cor da borda */
+}
+/*div invisivel do instagram*/
+#insta{
+    height: 50px;
+    width: 250px;
+    margin-left: 82%;
+    user-select: none;
+    cursor: pointer;
+    margin-top: -20px;
+    font-size: 18px;
+}
+
+/*parte do nosso nome */
+#p_guille{
+    margin-top: 15px;
+    color: rgb(0, 183, 255);
+}
+#p_rick{
+    margin-top: 8px;
+    color: rgb(0, 183, 255);
+}
+
+/*animacao dos links do insta*/
+.p_instagram{
+    animation-name: insta_anim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes insta_anim{
+    0%   { text-shadow: 0 0 5px #00ffee;}
+    50%  { text-shadow: 0 0 5px black;}
+    100% { text-shadow: 0 0 5px #00ffee;}}
+
+     /* Dropdown Button */
+.dropbtn {
+    font-family: 'Chakra Petch', sans-serif;
+    width: 80px;
+    height: 42px;
+    border: solid 2px #469bd2;
+    top: 22px;
+    position: absolute;
+    background-color: black;
+    transition: all 0.2s ease-in-out;
+    padding: 16px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    max-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+   height: 65px;
+   width: 85px;
+
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content button a {
+
+    display: block;
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: black;
+    transition: all 0.2s ease-in-out;
+    font-size: 16px;
+    text-align: center;
+    width: 85px;
+
+  }
+
+  .dropa {
+    color:rgb(0, 255, 191);
+    
+border:1px solid#00ffee;
+padding: 5px;
+    text-shadow: 0 0 20px #469bd2;
+    border-radius: 5px;
+  }
+  .dropa:hover { 
+    color:rgb(0, 81, 255);
+    border-radius: 10px;
+
+  }
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #002b20;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+
+  #username {
+    width: max-content;
+    height: max-content;
+    text-align: center center;
+    color:rgb(0, 255, 191);
+    margin-top: -25px;
+  }
+
+
+  .card {
+    margin-right: 72px;
+    margin-top: 50px;
+    float: left;
+    background-color: rgb(0, 0, 0, 0.5);
+    height: 400px;
+    width: 300px;
+    border: 1px solid rgb(0, 183, 255);
+    color: white;
+      /* Add shadows to create the "card" effect */
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  }
+
+  .username {
+    font-size: smaller;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+  #writeMessage {
+    color: cyan;
+}
+#title {
+    text-shadow: 0 0 30px #00ffee;
+}
